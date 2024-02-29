@@ -41,3 +41,8 @@ img {
     grid-row: span 1;
 }
 
+@media (max-width: 448px) {
+    .grid {
+        grid-template-columns: 250px 150px;
+    }
+}
