@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #100118;
+}
+.grid {
+    padding: 1% 2%;
+    width: 100vw;
+    min-height: 100vh;
+    grid-auto-flow: dense;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 220px;
+    gap: 15px;
+    background-color: #100118;
+}
+img {
+    
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hr {
+   grid-column: auto / span 2;
+}
+
+.vr {
+    
+    grid-row: auto / span 2;
+}
+
+.big {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
